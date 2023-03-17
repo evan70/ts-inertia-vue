@@ -1,11 +1,3 @@
----
-title: Integrating TypeScript with Inertia.js and Vue.js
-description: How to setup and use TypeScript with Inertia.js and Vue.js
-createdAt: 2023-01-04
-updatedAt: 2023-02-09
-slug: using_typescript_with_inertiajs_and_vue
----
-
 ## Integrating TypeScript with Inertia.js and Vue.js
 
 Why use Typescript?
@@ -254,6 +246,6 @@ php artisan migrate
 
 In 2 terminals:
 
-
+pnpm dev
 
 php artisan serve || pnpm serve
