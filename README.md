@@ -25,7 +25,7 @@ Before getting started, you will need to have the following installed:
 Lets start by creating a new Laravel project.
 
 ```bash
-laravel new ts-inertia-vue && cd ts-inertia-vue
+composer create-project laravel/laravel:^10.0 ts-inertia-vue && cd ts-inertia-vue
 ```
 
 Next, we can install [breeze or Jetstream](https://laravel.com/docs/9.x/starter-kits#laravel-breeze or Jetstream). Alternatively, you could use [Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze) or you can install Inertia and Vue manually if you want to.
@@ -37,7 +37,7 @@ composer require laravel/breeze // or jetstream
 Install the needed dependencies.
 
 ```bash
-php artisan breeze or jetstream:install inertia --dark
+php artisan breeze:install --dark  //or jetstream
 ```
 
 Now lets setup a basic `tsconfig.json` file.
