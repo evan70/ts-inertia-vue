@@ -25,11 +25,19 @@ Next, we can install Jetstream. Alternatively, you could use Breeze or you can i
 
 composer require inertiajs/inertia-laravel
 
+composer require laravel/breeze
+php artisan breeze:install --dark
+
+
 
 
 Install the needed dependencies.
 
 php artisan jetstream:install inertia
+
+
+php artisan inertia:middleware
+
 
 Now lets setup a basic tsconfig.json file.
 
@@ -66,11 +74,11 @@ And can add the following to it.
 
 Now lets install the needed dependencies for npm/yarn.
 
-yarn install
+pnpm i
 
 Add some extra dependencies for Typescript
 
-yarn add -D @types/lodash @types/node @types/ziggy-js typescript ziggy-js
+pnpm add -D @types/lodash @types/node @types/ziggy-js typescript ziggy-js
 
 Now we are pretty close to being ready to start using Typescript. I like to create a resources/js/types directory and add a few files to it. The files could be named anything you want, but I like to name them vue-shim.d.ts, inertia.d.ts, and env.d.ts.
 
@@ -114,7 +122,7 @@ declare global {
 
 Here you can create a env.d.ts file and add any environment variables you want to use in your project.
 
-touch resources/js/Types/env.d.ts
+touch resources/js/types/env.d.ts
 
 /// <reference types="vite/client" />
 
