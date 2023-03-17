@@ -9,7 +9,7 @@ declare global {
         created_at: Date;
         updated_at: Date;
       };
-      jetstream: {
+      breeze: {
         [key: string]: boolean;
       };
       errorBags: unknown;

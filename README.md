@@ -209,3 +209,19 @@ Note:
 I recently updated this post to upgrade to Inertia.js v1.0 not much has changed from this post but how you would previously use the usePage has changed. You can read more about that in the Inertia.js Upgrade Guide.
 
 There does not seem like an easy way to cast the props to a type like before, but since the usePage is now a method you could define a type for it in theory. I have not tried this yet, but I will update this post if I find a way to do it.
+
+git clone git@github.com:evan70/ts-inertia-vue.git && cd ts-inertia-vue
+
+cp .env.example .env
+
+composer install && pnpm install
+
+touch database/database.sqlite
+
+php artisan migrate
+
+In 2 terminals:
+
+pnpm dev
+
+php artisan serve || pnpm serve
