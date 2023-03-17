@@ -3,6 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@inertiajs/vue3': ^1.0.0
   '@tailwindcss/forms': ^0.5.3
+  '@types/lodash': ^4.14.191
+  '@types/node': ^18.15.3
+  '@types/ziggy-js': ^1.3.2
   '@vitejs/plugin-vue': ^4.0.0
   '@vue/server-renderer': ^3.2.31
   autoprefixer: ^10.4.12
@@ -10,12 +13,17 @@ specifiers:
   laravel-vite-plugin: ^0.7.2
   postcss: ^8.4.18
   tailwindcss: ^3.2.1
+  typescript: ^5.0.2
   vite: ^4.0.0
   vue: ^3.2.41
+  ziggy-js: ^1.5.0
 
 devDependencies:
   '@inertiajs/vue3': 1.0.2_vue@3.2.47
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
+  '@types/lodash': 4.14.191
+  '@types/node': 18.15.3
+  '@types/ziggy-js': 1.3.2
   '@vitejs/plugin-vue': 4.1.0_vite@4.2.0+vue@3.2.47
   '@vue/server-renderer': 3.2.47_vue@3.2.47
   autoprefixer: 10.4.14_postcss@8.4.21
@@ -23,8 +31,10 @@ devDependencies:
   laravel-vite-plugin: 0.7.4_vite@4.2.0
   postcss: 8.4.21
   tailwindcss: 3.2.7_postcss@8.4.21
-  vite: 4.2.0
+  typescript: 5.0.2
+  vite: 4.2.0_@types+node@18.15.3
   vue: 3.2.47
+  ziggy-js: 1.5.0
 
 packages:
 
@@ -307,6 +317,24 @@ packages:
       tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
+  /@types/history/4.7.11:
+    resolution: {integrity: sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==}
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: true
+
+  /@types/node/18.15.3:
+    resolution: {integrity: sha512-p6ua9zBxz5otCmbpb5D3U4B5Nanw6Pk3PPyX05xnxbB/fRv71N7CPmORg7uAD5P70T0xmx1pzAx/FUfa5X+3cw==}
+    dev: true
+
+  /@types/ziggy-js/1.3.2:
+    resolution: {integrity: sha512-hwnsR3tEy3jyW+akw5kwfyZ9+/MZ+jN659G6LoGKBL9LvOUv07fiMsZL3vaK8IfTo2OXVMa4elsX8r/nU/x9hw==}
+    dependencies:
+      '@types/history': 4.7.11
+    dev: true
+
   /@vitejs/plugin-vue/4.1.0_vite@4.2.0+vue@3.2.47:
     resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -314,7 +342,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.2.0
+      vite: 4.2.0_@types+node@18.15.3
       vue: 3.2.47
     dev: true
 
@@ -742,7 +770,7 @@ packages:
       vite: ^3.0.0 || ^4.0.0
     dependencies:
       picocolors: 1.0.0
-      vite: 4.2.0
+      vite: 4.2.0_@types+node@18.15.3
       vite-plugin-full-reload: 1.0.5_vite@4.2.0
     dev: true
 
@@ -931,6 +959,11 @@ packages:
       side-channel: 1.0.4
     dev: true
 
+  /qs/6.9.7:
+    resolution: {integrity: sha512-IhMFgUmuNpyRfxA90umL7ByLlgRXu6tIfKPpF5TmcfRLlLCckfP/g3IQmju6jjpu+Hh8rA+2p6A27ZSPOOHdKw==}
+    engines: {node: '>=0.6'}
+    dev: true
+
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
@@ -1055,6 +1088,12 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
+    hasBin: true
+    dev: true
+
   /update-browserslist-db/1.0.10_browserslist@4.21.5:
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
     hasBin: true
@@ -1077,10 +1116,10 @@ packages:
     dependencies:
       picocolors: 1.0.0
       picomatch: 2.3.1
-      vite: 4.2.0
+      vite: 4.2.0_@types+node@18.15.3
     dev: true
 
-  /vite/4.2.0:
+  /vite/4.2.0_@types+node@18.15.3:
     resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1105,6 +1144,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.15.3
       esbuild: 0.17.11
       postcss: 8.4.21
       resolve: 1.22.1
@@ -1131,4 +1171,10 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: true
+
+  /ziggy-js/1.5.0:
+    resolution: {integrity: sha512-whzY4H/EMEKrXbbqQbncrSy9WN8N6sjzbVPdBjhQMauvODWtNUTDMq6Po55hPDx43GRFtIF22zrs/m2Z3qOi4g==}
+    dependencies:
+      qs: 6.9.7
     dev: true
