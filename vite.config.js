@@ -21,8 +21,8 @@ export default defineConfig({
         visualizer({
             filename: './storage/analyzer/bundle-analyzer.html',
             open: true,
-            template: 'list', //sunburst, treemap, network, json, list
-            json: false,
+            template: 'sunburst', //sunburst, treemap, network, raw-data
+            //json: false,
             gzipSize: true,
             brotliSize: true,
         }),
