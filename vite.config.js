@@ -1,30 +1,20 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue';
-import { visualizer } from "rollup-plugin-visualizer";
+import { defineConfig } from 'vite'
+import laravel from 'laravel-vite-plugin'
+import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: 'resources/js/app.js',
-            ssr: 'resources/js/ssr.js',
-            refresh: true,
-        }),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
-        }),
-        visualizer({
-            filename: './storage/analyzer/bundle-analyzer.html',
-            open: true,
-            template: 'sunburst', //sunburst, treemap, network, raw-data
-            //json: false,
-            gzipSize: true,
-            brotliSize: true,
-        }),
-    ],
-});
+  plugins: [
+    laravel({
+      input: 'resources/js/app.ts',
+      refresh: true,
+    }),
+    vue({
+      template: {
+        transformAssetUrls: {
+          base: null,
+          includeAbsolute: false,
+        },
+      },
+    }),
+  ],
+})
