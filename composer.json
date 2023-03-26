@@ -2,25 +2,32 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
+    "contributors": [
+        "Tanner Campbell <tcamp022@gmail.com>"
+    ],
     "require": {
         "php": "^8.1",
-        "guzzlehttp/guzzle": "^7.5",
-        "inertiajs/inertia-laravel": "^0.6.9",
-        "laravel/framework": "^10.3.3",
-        "laravel/sanctum": "^3.2.1",
-        "laravel/tinker": "^2.8.1",
-        "tightenco/ziggy": "^1.5"
+        "guzzlehttp/guzzle": "^7.2",
+        "inertiajs/inertia-laravel": "^0.6.3",
+        "laravel/framework": "^10.0",
+        "laravel/jetstream": "^2.12",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7",
+        "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.21.0",
-        "laravel/breeze": "^1.19.2",
-        "laravel/pint": "^1.6",
-        "laravel/sail": "^1.21.2",
-        "mockery/mockery": "^1.5.1",
-        "nunomaduro/collision": "^6.4",
-		"phpunit/phpunit": "^10.0",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.2",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^7.0",
+        "nunomaduro/larastan": "^2.2",
+        "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -48,7 +55,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "stan": "vendor/bin/phpstan analyse",
+        "pint": "vendor/bin/pint"
     },
     "extra": {
         "laravel": {
@@ -60,8 +69,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "stable",
