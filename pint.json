@@ -1,0 +1,15 @@
+{
+    "preset": "laravel",
+    "exclude": [
+        ".vscode/**",
+        "resources/js/**",
+        "resources/css/**",
+        "resources/markdown/**"
+    ],
+    "rules": {
+        "no_useless_else": true,
+        "concat_space": {
+            "spacing": "one"
+        }
+    }
+}
