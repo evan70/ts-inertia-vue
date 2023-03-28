@@ -11,11 +11,13 @@
         "seed": "./artisan migrate:fresh --seed"
     },
     "contributors": [
-        "Tanner Campbell <tcamp022@gmail.com>"
+        "Ivan Paldan <ivanpaldan@gmail.com>"
     ],
     "devDependencies": {
         "@antfu/eslint-config": "^0.35.1",
         "@inertiajs/vue3": "^1.0.0",
+        "@tailwindcss/forms": "^0.5.3",
+        "@types/node": "^18.15.10",
         "@types/ziggy-js": "^1.3.2",
         "@vitejs/plugin-vue": "^4.0.0",
         "autoprefixer": "^10.4.12",
