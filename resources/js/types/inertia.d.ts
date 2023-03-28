@@ -11,10 +11,6 @@ declare global {
             updated_at: Date
         }
 
-        export interface Jetstream {
-            [key: string]: boolean
-        }
-
         export type ErrorBags = undefined | { [key: string]: string[] }
 
         export type Errors = undefined | string[]
