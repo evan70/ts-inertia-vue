@@ -3,7 +3,7 @@
 ##
 
 ```bash
-git clone git@github.com:tcampbPPU/ts-inertia-vue.git && cd ts-inertia-vue
+git clone git@github.com:evan70/ts-inertia-vue.git && cd ts-inertia-vue
 ```
 
 ```bash
@@ -11,7 +11,7 @@ cp .env.example .env
 ```
 
 ```bash
-composer install && yarn install
+composer install && pnpm install
 ```
 
 ```bash
@@ -25,9 +25,9 @@ php artisan migrate
 In 2 terminals:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ```bash
-php artisan serve || yarn serve
+php artisan serve || pnpm serve
 ```
