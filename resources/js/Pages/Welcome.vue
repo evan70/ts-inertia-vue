@@ -20,7 +20,7 @@ defineProps({
 </script>
 
 <template>
-    <Head title="Welcome" />
+    <Head title="Welcome from js/Welcome.vue" />
 
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white"
@@ -89,7 +89,7 @@ defineProps({
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
+                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation from js/Welcome.vue</h2>
 
                             <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                 Laravel has wonderful documentation covering every aspect of the framework. Whether you
